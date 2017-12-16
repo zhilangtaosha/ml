@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="透明感 <= 3.196\ngini = 0.916\nsamples = 100\nvalue = [13, 6, 7, 7, 13, 7, 7, 6, 7, 7, 7, 6, 7]\nclass = 0", fillcolor="#e5813900"] ;
+1 [label="エキゾチック <= -8.033\ngini = 0.904\nsamples = 68\nvalue = [2, 6, 7, 7, 0, 7, 7, 6, 6, 7, 7, 6, 0]\nclass = 2", fillcolor="#ace53900"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.0\nsamples = 7\nvalue = [0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\nclass = 2", fillcolor="#ace539ff"] ;
+1 -> 2 ;
+3 [label="力強い <= 6.623\ngini = 0.894\nsamples = 61\nvalue = [2, 6, 0, 7, 0, 7, 7, 6, 6, 7, 7, 6, 0]\nclass = 3", fillcolor="#5be53900"] ;
+1 -> 3 ;
+4 [label="gini = 0.882\nsamples = 54\nvalue = [2, 6, 0, 7, 0, 7, 7, 6, 6, 0, 7, 6, 0]\nclass = 3", fillcolor="#5be53900"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 7\nvalue = [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0]\nclass = 9", fillcolor="#9a39e5ff"] ;
+3 -> 5 ;
+6 [label="フレッシュ <= 3.019\ngini = 0.668\nsamples = 32\nvalue = [11, 0, 0, 0, 13, 0, 0, 0, 1, 0, 0, 0, 7]\nclass = 4", fillcolor="#39e56418"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="ジューシー <= 3.875\ngini = 0.526\nsamples = 19\nvalue = [11, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 7]\nclass = 0", fillcolor="#e5813955"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 11\nvalue = [11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]\nclass = 0", fillcolor="#e58139ff"] ;
+7 -> 8 ;
+9 [label="gini = 0.219\nsamples = 8\nvalue = [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 7]\nclass = 12", fillcolor="#e53941db"] ;
+7 -> 9 ;
+10 [label="gini = 0.0\nsamples = 13\nvalue = [0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 0, 0, 0]\nclass = 4", fillcolor="#39e564ff"] ;
+6 -> 10 ;
+}
